@@ -24,3 +24,8 @@ Thumbs.db
 
 # Test outputs
 test_results/
+__pycache__/
+*.o
+*.a
+*.so
+c_toolkit/test/test_sdk

@@ -5,7 +5,7 @@
 ################################################################################
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/lib/common.sh"
+source "$SCRIPT_DIR/bash_toolkit/scripts/lib/common.sh"
 
 ################################################################################
 # Menu Functions
@@ -129,14 +129,14 @@ while true; do
                 read -r subchoice
 
                 case $subchoice in
-                    1) run_tool "$SCRIPT_DIR/cybersecurity/port_scanner.sh" --help ;;
-                    2) run_tool "$SCRIPT_DIR/cybersecurity/subnet_scanner.sh" --help ;;
-                    3) run_tool "$SCRIPT_DIR/cybersecurity/ssl_checker.sh" --help ;;
-                    4) run_tool "$SCRIPT_DIR/cybersecurity/log_analyzer.sh" --help ;;
-                    5) run_tool "$SCRIPT_DIR/cybersecurity/password_checker.sh" --help ;;
-                    6) run_tool "$SCRIPT_DIR/cybersecurity/hash_tool.sh" --help ;;
-                    7) run_tool "$SCRIPT_DIR/cybersecurity/vuln_scanner.sh" --help ;;
-                    8) run_tool "$SCRIPT_DIR/cybersecurity/integrity_checker.sh" --help ;;
+                    1) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/port_scanner.sh" --help ;;
+                    2) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/subnet_scanner.sh" --help ;;
+                    3) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/ssl_checker.sh" --help ;;
+                    4) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/log_analyzer.sh" --help ;;
+                    5) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/password_checker.sh" --help ;;
+                    6) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/hash_tool.sh" --help ;;
+                    7) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/vuln_scanner.sh" --help ;;
+                    8) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/cybersecurity/integrity_checker.sh" --help ;;
                     0) break ;;
                     *) log_error "Invalid choice" ; sleep 1 ;;
                 esac
@@ -148,12 +148,12 @@ while true; do
                 read -r subchoice
 
                 case $subchoice in
-                    1) run_tool "$SCRIPT_DIR/automation/health_monitor.sh" --help ;;
-                    2) run_tool "$SCRIPT_DIR/automation/auto_backup.sh" --help ;;
-                    3) run_tool "$SCRIPT_DIR/automation/service_watchdog.sh" --help ;;
-                    4) run_tool "$SCRIPT_DIR/automation/deploy_helper.sh" --help ;;
-                    5) run_tool "$SCRIPT_DIR/automation/batch_processor.sh" --help ;;
-                    6) run_tool "$SCRIPT_DIR/automation/api_tester.sh" --help ;;
+                    1) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/health_monitor.sh" --help ;;
+                    2) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/auto_backup.sh" --help ;;
+                    3) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/service_watchdog.sh" --help ;;
+                    4) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/deploy_helper.sh" --help ;;
+                    5) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/batch_processor.sh" --help ;;
+                    6) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/automation/api_tester.sh" --help ;;
                     0) break ;;
                     *) log_error "Invalid choice" ; sleep 1 ;;
                 esac
@@ -165,19 +165,19 @@ while true; do
                 read -r subchoice
 
                 case $subchoice in
-                    1) run_tool "$SCRIPT_DIR/iot/mqtt_helper.sh" --help ;;
-                    2) run_tool "$SCRIPT_DIR/iot/device_discovery.sh" --help ;;
-                    3) run_tool "$SCRIPT_DIR/iot/serial_monitor.sh" --help ;;
-                    4) run_tool "$SCRIPT_DIR/iot/traffic_monitor.sh" --help ;;
-                    5) run_tool "$SCRIPT_DIR/iot/firmware_checker.sh" --help ;;
-                    6) run_tool "$SCRIPT_DIR/iot/gpio_controller.sh" --help ;;
+                    1) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/mqtt_helper.sh" --help ;;
+                    2) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/device_discovery.sh" --help ;;
+                    3) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/serial_monitor.sh" --help ;;
+                    4) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/traffic_monitor.sh" --help ;;
+                    5) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/firmware_checker.sh" --help ;;
+                    6) run_tool "$SCRIPT_DIR/bash_toolkit/scripts/iot/gpio_controller.sh" --help ;;
                     0) break ;;
                     *) log_error "Invalid choice" ; sleep 1 ;;
                 esac
             done
             ;;
         4)
-            run_tool "$SCRIPT_DIR/utils/report_generator.sh" --help
+            run_tool "$SCRIPT_DIR/bash_toolkit/scripts/utils/report_generator.sh" --help
             ;;
         5)
             show_about
