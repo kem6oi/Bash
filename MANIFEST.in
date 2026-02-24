@@ -1,0 +1,7 @@
+recursive-include iot *.sh
+recursive-include cybersecurity *.sh
+recursive-include automation *.sh
+recursive-include lib *.sh
+recursive-include utils *.sh
+include menu.sh
+include setup.sh

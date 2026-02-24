@@ -24,3 +24,4 @@ Thumbs.db
 
 # Test outputs
 test_results/
+__pycache__/
