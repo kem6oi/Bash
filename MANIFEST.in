@@ -1,7 +1,7 @@
-recursive-include iot *.sh
-recursive-include cybersecurity *.sh
-recursive-include automation *.sh
-recursive-include lib *.sh
-recursive-include utils *.sh
+recursive-include bash_toolkit/scripts/iot *.sh
+recursive-include bash_toolkit/scripts/cybersecurity *.sh
+recursive-include bash_toolkit/scripts/automation *.sh
+recursive-include bash_toolkit/scripts/lib *.sh
+recursive-include bash_toolkit/scripts/utils *.sh
 include menu.sh
 include setup.sh
